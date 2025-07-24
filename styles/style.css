@@ -107,6 +107,9 @@ nav {
 
 
 /* ------ our plants section style start-------  */
+.our-plants{
+    margin-bottom: 210px;
+}
 .our-plants-title{
     font-size: 3rem;
     font-weight: 700;
@@ -152,6 +155,47 @@ width: 100%;
 
 
 
+    /* -- --------- flower and plants lover section start ---------  -- */
+        .plants-lover{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 60px;
+    }
+
+    .plants-lover-img{
+        width: 100%;
+         position: relative;
+    }
+    .store-img{
+       width: 100%;
+    }
+    .badge{
+        width: 285px;
+        position: absolute;
+        top: -129px;
+        right: -100px;
+    }
+   
+ 
+   
+
+    .plants-lover-title{
+        font-size: 3.2rem;
+        font-weight: 700;
+        margin: 0;
+        padding: 0;
+    }
+      .plants-lover ul{
+      
+      }
+    .plants-lover ul li {
+        margin-left: 27px;
+        margin-top: 20px;
+        line-height: 2.2rem;
+    }
+    /* -- --------- flower and plants lover section end------------  -- */
+
 
 
 
@@ -171,15 +215,17 @@ width: 100%;
         width: 90%;
         margin: 0 auto;
     }
+    .m-b{
+        margin-bottom: 120px;
+    }
 
     /* -------common style end-------  */
 
     .navbar {
-        margin-bottom: 120px;
         margin-top: 30px;
     }
 
-    ul {
+    #nav-hide {
         display: none;
         /* for navbar hide */
     }
@@ -232,6 +278,21 @@ width: 100%;
     font-size: 15px;
 }
 /* ------ our plants section style end-------  */
+
+
+
+    /* -- --------- flower and plants lover section start ---------  -- */
+    .our-plants{
+        margin-bottom: 120px;
+}
+    .plants-lover{
+        flex-direction: column;
+    }
+    .badge{
+        display: none;
+    }
+
+    /* -- --------- flower and plants lover section end------------  -- */
 
 
 /* ------- responsive design end--------  */
