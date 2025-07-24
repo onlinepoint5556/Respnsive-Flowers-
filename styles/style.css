@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+:root {
+    --primary-clr: rgba(0, 0, 0, 0.5);
+    --primary-font-s: 1.375rem;
+}
+
+/* ------- common css style ------- */
+.font-noto {
+    font-family: "Noto Serif", serif;
+}
+
+.w {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.m-b {
+    margin-bottom: 120px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-orange {
+    color: #E95A08;
+}
+
+.description {
+    color: var(--primary-clr);
+    font-size: var(--primary-font-s);
+}
+
+/* ------- common css style end ------- */
+
+/* ------ header section style start-------  */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
+    margin-bottom: 120px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 48px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #8987A1;
+    padding: 18px 0;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+}
+
+#active,
+#cart {
+    color: #252432;
+}
+
+/* ----hero banner ----  */
+#hero-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text {
+    flex-basis: 50%;
+}
+
+.banner-title {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 13px;
+}
+
+.hero-image {
+    flex-basis: 50%;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+}
+
+/* ----hero banner ending----  */
+
+/* ------ header section style end-------  */
+
+
+/* ------ our plants section style start-------  */
+.our-plants-title{
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+.our-plants-p{
+    margin-bottom: 50px;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(4, 270px);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.card img{
+width: 100%;
+}
+.card-title,
+.price{
+    font-size: 1.375rem;
+    font-weight: 500;
+    /* text-align: center; */
+    color: #111111;
+    padding: 10px 0;
+}
+.ad-to-card-btn{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1rem;
+    /* text-align: center; */
+    font-weight: 600;
+    color: #fff;
+    background-color: #E95A08;
+    padding: 19px 80px;
+}
+
+/* ------ our plants section style end-------  */
+
+
+
+
+
+
+
+/* ------- responsive design--------  */
+@media screen and (max-width:576px) {
+     .navbar,
+    #hero-banner {
+        width: 100%;
+    }
+
+    /* -------common style -------  */
+    .m-w
+
+    /*mobile width */
+        {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    /* -------common style end-------  */
+
+    .navbar {
+        margin-bottom: 120px;
+        margin-top: 30px;
+    }
+
+    ul {
+        display: none;
+        /* for navbar hide */
+    }
+
+    #cart {
+        margin-top: 40px;
+        /* for looking center */
+    }
+
+    /* ---------hero banner style ----------  */
+    #hero-banner {
+        flex-direction: column;
+        gap: 28px;
+    }
+
+    #hero-banner .hero-text {
+        order: 1;
+    }
+
+    .banner-title {
+        font-size: 1.5rem !important;
+    }
+
+    .description {
+        font-size: .875rem;
+    }
+
+    .hero-image {
+        min-width: 100%;
+        height: auto;
+    }
+
+    .hero-image img {
+        min-width: 290px;
+
+    }
+
+/* ------ our plants section style start-------  */
+.card-container{
+    grid-template-columns: repeat(2, 171px);
+}
+.ad-to-card-btn{
+     padding: 19px 30px;
+}
+.card-title,
+.price{
+    font-size: 1.5rem;
+}
+.description{
+    font-size: 15px;
+}
+/* ------ our plants section style end-------  */
+
+
+/* ------- responsive design end--------  */
+
+
+}
+
+
